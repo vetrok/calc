@@ -4,15 +4,20 @@
 	/*font-family: 'Didact Gothic','Noto Sans', sans-serif;*/
 	font-family: 'Open Sans', sans-serif;
 }
-body{
-	background-color:rgb(235, 232, 225);
+html,body{
+    background-color:rgb(229, 231, 239);
 	font-family:'Open Sans', sans-serif;
+    height: 100%;
+
 }
 div.container{
 	width:900px;
 	/*background:#fff;*/
 	margin:0 auto;
 	overflow:visible;
+    box-sizing: border-box;
+    min-height: 100%;
+    padding-bottom: 100px;
 }
 div.wrap{
 	overflow:visible;
@@ -181,7 +186,7 @@ div.prev a {
 	position: absolute;
 	left: 50%;
 	/*Ширина стрелочки*/
-	width: 7px;
+	width: 4px;
 	height: 50%;
 	/*background: #566475;*/
 	background: rgba(88, 250, 88, 0.6);

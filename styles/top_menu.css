@@ -29,18 +29,18 @@ li.item1 a, li.item2 a, li.item3 a, li.item4 a{
 }
 li.item1 a:link, li.item2 a:link, li.item3 a:link, li.item4 a:link,
 li.item1 a:visited, li.item2 a:visited, li.item3 a:visited, li.item4 a:visited{
-	color:#A4A4A4;
+	color: rgb(109, 101, 119);
 }
 /*Крашу верхнее меню актвные ссылки в прозрачный*/
 li.item3 a.seans,li.item2 a.smena{
-	background:rgb(235, 232, 225);
+	background:rgb(229, 231, 239);
 	color:#424242;
 }
 /*Когда навожу мышей на меню 2\3 делаю плавной смену цветов*/
 /*li.item2 a.top:hover, li.item3 a.top:hover{*/
 ul.menu a:hover{
 	transition: 0.5s;
-	background-color:rgb(235, 232, 225);
+	background-color:rgb(229, 231, 239);
 	color:black;
 }
 ul.menu li.item1 a:hover,ul.menu li.item4 a:hover{
