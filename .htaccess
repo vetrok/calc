@@ -1,0 +1,10 @@
+AddDefaultCharset utf-8
+#Options Indexes
+Options +FollowSymLinks
+DirectoryIndex no.php
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule !\.(js|gif|jpg|jpeg|png|css)$ index.php
+
+php_flag display_errors On

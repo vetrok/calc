@@ -1,0 +1,91 @@
+ul.menu ul, ul.menu{
+	list-style:none;
+}
+ul.menu{
+
+	/*height:150px;
+	position:relative;
+	z-index:15;*/
+	width:920px;
+	height:175px;
+	position:relative;
+	overflow:visible;
+}
+li.item1, li.item2, li.item3, li.item4{
+	float:left;
+	background:white;
+	overflow:hidden;
+}
+li.item1 a, li.item2 a, li.item3 a, li.item4 a{
+	background:white;
+	display:table-cell;
+	margin-left:-30px;
+	width:225px;
+	height:175px;
+	vertical-align:middle;
+	text-align:center;
+	font-size:22px;
+	text-decoration:none;
+}
+li.item1 a:link, li.item2 a:link, li.item3 a:link, li.item4 a:link,
+li.item1 a:visited, li.item2 a:visited, li.item3 a:visited, li.item4 a:visited{
+	color:#A4A4A4;
+}
+/*Крашу верхнее меню актвные ссылки в прозрачный*/
+li.item3 a.seans,li.item2 a.smena{
+	background:rgb(235, 232, 225);
+	color:#424242;
+}
+/*Когда навожу мышей на меню 2\3 делаю плавной смену цветов*/
+/*li.item2 a.top:hover, li.item3 a.top:hover{*/
+ul.menu a:hover{
+	transition: 0.5s;
+	background-color:rgb(235, 232, 225);
+	color:black;
+}
+ul.menu li.item1 a:hover,ul.menu li.item4 a:hover{
+	background-color:white;
+}
+
+/*когда увожу мышкой с блока 2 и 3 тоже плавная смена*/
+li.item2 a.top:not(:hover), li.item3 a.top:not(:hover){
+	transition: 0.7s;
+}
+/*Тоже самое для 1\2*/
+li.item1 a:not(:hover), li.item4 a:not(:hover){
+	transition: 0.7s;
+}
+li.item1 a:hover, li.item4 a:hover{
+	transition: 0.7s;
+	color:black;	
+}
+ul.swing1, ul.swing2{
+	/*visibility:hidden;
+	width:225px;*/
+	background:white;
+	position:absolute;
+	border:solid 1px #C0C0C0;
+	border-top:none;
+	visibility:hidden;
+	z-index:112;
+}
+li.item2:hover ul.swing1, li.item3:hover ul.swing2,
+li.item2 a:active ul.swing1, li.item3 a:active ul.swing2{
+
+	visibility:visible;
+	/*left:225px;
+	top:175px;*/
+}
+ul.swing1 a, ul.swing2 a{
+	height:70px;
+}
+/*Меняю плавно стиль всплывающего меню!*/
+/*ul.swing2 a:hover, ul.swing1 a:hover{
+	transition: 0.5s;
+	background-color:#E6E6E6;
+	color:black;
+}*/
+
+
+
+
