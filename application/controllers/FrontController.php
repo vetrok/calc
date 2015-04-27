@@ -65,7 +65,10 @@ class FrontController
                 throw new \Exception('Class Doesnt exists');
             }
         } catch (\Exception $e) {
-            echo '<h1>' . $e->getMessage() . '</h1>';
+            $err = "Файл: ".__FILE__.
+                ". Строка: ".__LINE__.
+                ". Исключительная ситуация - ".$e->getMessage();
+            trigger_error($err);
             die;
         }
     }
