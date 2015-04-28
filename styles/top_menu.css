@@ -76,6 +76,7 @@ li.item2 a:active ul.swing1, li.item3 a:active ul.swing2{
 	/*left:225px;
 	top:175px;*/
 }
+
 ul.swing1 a, ul.swing2 a{
 	height:70px;
 }

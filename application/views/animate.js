@@ -1,4 +1,7 @@
 $(function(){
+    /**
+     *Анимация верхнего меню
+    */
 	var topAnimate = function(){
 		/* Old code :))
 		var mLeft = function(target, dur) {
@@ -85,6 +88,19 @@ $(function(){
 		
 
 	};
-	topAnimate();
-
+    /**
+     *Отмена работы двух ссылок в верхнем меню Смены и Сеансы
+     * - по прозьбе пользователей мобильных устройств
+    */
+    var stopLink = function(){
+        $('a.top').each(function(num, targ){
+            if (num == 1 || num == 2) {
+                $(targ).on('click', function(e){
+                    e.preventDefault();
+                });
+            }
+        });
+    };
+    stopLink();
+    topAnimate();
 });

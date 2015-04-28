@@ -26,21 +26,21 @@ class FrontController
         /**
         *Выбираю какой контроллер\метод использовать , забиваю массив переменных
          */
-        if ($arr[1] == 'seans') {
+        if ($arr[0] == 'seans') {
             $this->_controller = '\\' . __NAMESPACE__ . '\SeansController';
-        } elseif ($arr[1] == 'smena') {
+        } elseif ($arr[0] == 'smena') {
             $this->_controller = '\\' .  __NAMESPACE__ . '\SmenaController';
         } else {
             $this->_controller = '\\' . __NAMESPACE__ . '\IndexController';
         }
-        if ($arr[2] == 'create') {
+        if ($arr[1] == 'create') {
             $this->_action = 'createAction';
-        } elseif ($arr[2] == 'show') {
+        } elseif ($arr[1] == 'show') {
             $this->_action = 'showAction';
         } else {
             $this->_action = 'indexAction';
         }
-        for ($i = 3; $arr[$i]; $i += 2) {
+        for ($i = 2; $arr[$i]; $i += 2) {
             $this->_params[$arr[$i]] = $arr[$i + 1];  
         }
     }

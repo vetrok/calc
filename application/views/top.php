@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Эскиз</title>
+	<title>Калькулятор</title>
 	<meta charset='utf-8'>
 	<link rel='stylesheet' type='text/css' href='<?php echo \application\controllers\Def::getStyles();?>root.css'>
 	<link href='http://fonts.googleapis.com/css?family=Noto+Sans:700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>

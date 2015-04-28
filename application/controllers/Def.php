@@ -29,7 +29,7 @@ class Def
     protected static $_index = '';
     public static function getProjectAddr()
     {
-        return static::$_projectAddr = '/calc';
+        return static::$_projectAddr = '';
     }
 
     public static function getViews()

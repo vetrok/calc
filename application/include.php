@@ -19,7 +19,7 @@ function errorLog($no, $str, $file, $line) {
     /**
      *При достижении файла логов размена ИКС(100 мб) пишим в новый файл
      */
-    $logDir = $_SERVER['DOCUMENT_ROOT'].DIRECTORY_SEPARATOR.'calc'.DIRECTORY_SEPARATOR.'log'.DIRECTORY_SEPARATOR;
+    $logDir = $_SERVER['DOCUMENT_ROOT'].DIRECTORY_SEPARATOR.'log'.DIRECTORY_SEPARATOR;
     $num = count(scandir($logDir)) - 2;
     if ($num == 0) {
         $fileNum = $num + 1;
